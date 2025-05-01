@@ -32,16 +32,16 @@ upstreams:
       - target: <ip-privada-alarms-app-c>:8080
         weight: 100
     healthchecks:
-      threshold: 0
+      threshold: 35
       active:
         http_path: /health/
-        timeout: 0
+        timeout: 10
         healthy:
-          successes: 0
-          interval: 0
+          successes: 4
+          interval: 10
         unhealthy:
-          tcp_failures: 0
-          interval: 0
+          tcp_failures: 1
+          interval: 5
 
   - name: monitoring_upstream
     targets:
