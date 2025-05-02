@@ -251,7 +251,6 @@ resources:
           cd /labs
           sudo git clone https://github.com/linamu24/ISIS2503-MonitoringApp-Disponibilidad.git
           cd ISIS2503-MonitoringApp-Disponibilidad
-          sudo git checkout Circuit-Breaker
           sudo pip3 install -r requirements.txt
 # Monitoring app instance
 - type: compute.v1.instance
