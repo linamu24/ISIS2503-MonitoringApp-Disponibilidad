@@ -18,8 +18,8 @@ services:
       
       - name: alarms
         paths:
-          - /alarms
-          - /alarmsValidate/
+          - /datosPacientes/
+          - /createDatosPaciente/
         strip_path: false
     
 upstreams:
