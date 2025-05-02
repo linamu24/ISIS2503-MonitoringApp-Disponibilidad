@@ -11,7 +11,7 @@ def alarm_list(request):
     return JsonResponse(context, safe=False)
 
 @csrf_exempt
-def generate_alarm(request, paciente_id,nombre, tipoSangre, alergias):
+def generate_alarm(request):
     
     #numero entre 1 y 100
     i = random.randint(1, 100)
